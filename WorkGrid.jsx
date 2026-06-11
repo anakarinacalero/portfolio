@@ -15,12 +15,12 @@ const PROJECTS = [
   },
   {
     id: "facturas-claude",
-    year: "2024", kind: "Tool",
+    year: "2026", kind: "Tool",
     title: "FacturasClaude",
-    blurb: "AI-powered invoice data extraction — drop a bill, get structured totals, taxes, and line items back.",
-    desc: "AI-powered invoice data extraction. Drop in a utility bill or invoice and Claude reads it, returning structured totals, taxes, currency, and line-item breakdowns ready to use.",
+    blurb: "AI-powered invoice data extraction using Claude API — drop a bill, get structured totals, taxes, and line items back.",
+    desc: "AI-powered invoice data extraction using Claude API. Drop in a utility bill or invoice and Claude reads it, returning structured totals, taxes, currency, and line-item breakdowns ready to use.",
     tags: ["Claude API", "OCR", "Automation"],
-    repo: "https://github.com/anacalero/facturas-claude",
+    repo: "https://github.com/anakarinacalero/FacturasClaude",
     shots: 3,
     images: ["assets/facturas/home.png", "assets/facturas/resultado.png", "assets/facturas/datos_comunes.jpg"],
   },
@@ -31,7 +31,7 @@ const PROJECTS = [
     blurb: "A web app for building, taking, and grading exams online.",
     desc: "A web app for building, taking, and grading exams online — question authoring, timed test sessions, and results review in one place.",
     tags: ["C#", "EF Core"],
-    repo: "https://github.com/anacalero/examenapp",
+    repo: "https://github.com/anakarinacalero/ExamenApp",
     shots: 10,
     images: [
       "assets/examen/screenshot-01.png",
@@ -89,7 +89,7 @@ function WorkGrid() {
     <section className="work" id="work">
       <div className="section-head">
         <span className="eyebrow">Projects · 2023 — 2025</span>
-        <h2>Selected things I've shipped.</h2>
+        <h2>Personal projects</h2>
       </div>
 
       <div className="proj-carousel">

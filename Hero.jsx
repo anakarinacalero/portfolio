@@ -57,7 +57,7 @@ function Hero() {
 
       <span className="status-pill reveal" style={{ "--d": "0ms" }}>
         <span className="status-dot" />
-        Available for work · Q3 2026
+        Available for work
       </span>
 
       <h1 className="hero-headline">
@@ -75,8 +75,7 @@ function Hero() {
       </h1>
 
       <p className="hero-lead reveal" style={{ "--d": "650ms" }}>
-        i build modern .NET systems and the elegant interfaces that sit on top —
-        APIs, services, and the occasional pixel.
+        I create modern .NET applications and clean, elegant interfaces designed with scalability, maintainability, and user experience in mind.
       </p>
 
       <div className="hero-cta-row reveal" style={{ "--d": "780ms" }}>
@@ -89,7 +88,7 @@ function Hero() {
       </div>
 
       <div className="hero-meta reveal" style={{ "--d": "900ms" }}>
-        <span><Icon name="dot" size={8} /> madrid · remote</span>
+        <span><Icon name="dot" size={8} /> Latin America · Remote</span>
         <span>·</span>
         <span>.NET 9 · Blazor · SQL Server</span>
       </div>
