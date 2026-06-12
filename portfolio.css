@@ -446,7 +446,6 @@ body.locked {
   display: block;
   overflow: hidden;
 }
-.proj-slide image-slot { width: 100%; height: 100%; }
 .proj-slide-shade {
   position: absolute; inset: 0;
   background: linear-gradient(180deg, transparent 55%, rgba(8,5,14,0.55) 100%);
@@ -790,8 +789,6 @@ body.locked {
   flex: 0 0 100%;
   height: 100%;
 }
-.carousel-slide image-slot { width: 100%; height: 100%; }
-
 .carousel-arrow {
   position: absolute; top: 50%; transform: translateY(-50%);
   width: 42px; height: 42px;

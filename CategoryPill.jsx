@@ -3,8 +3,8 @@
 
 const CATEGORY_SLIDES = [
   { title: "SOFTWARE DEVELOPMENT", subtitle: "Building reliable systems end to end.", curtain: "Software Development" },
-  { title: "FRONT AND BACKEND",    subtitle: "Pixel-perfect UIs and the APIs behind them.", curtain: "Front and Backend" },
-  { title: "AI ENTHUSIAST",        subtitle: "Exploring practical machine learning.", curtain: "AI Enthusiast" },
+  { title: "FRONT AND BACKEND",    subtitle: "Using the .NET ecosystem.", curtain: "Front and Backend" },
+  { title: "AI ENTHUSIAST",        subtitle: "Exploring ways to improve productivity.", curtain: "AI Enthusiast" },
   { title: "CLEAN PRACTICES",      subtitle: "Readable, tested, well-architected code.", curtain: "Clean Practices" },
   { title: "SCALABILITY FOCUSED",  subtitle: "Designed to grow without breaking.", curtain: "Scalability Focused" },
 ];

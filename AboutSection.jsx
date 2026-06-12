@@ -7,13 +7,11 @@ function AboutSection() {
 
         <div className="about-photo-col">
           <div className="about-photo-ring">
-            <image-slot
-              id="about-photo"
-              style={{width:"100%",height:"100%",display:"block"}}
-              shape="circle"
-              fit="cover"
-              placeholder="Drop your photo here"
-            ></image-slot>
+            <img
+              src="./assets/about/profile.png"
+              alt="Ana Calero"
+              style={{width:"100%",height:"100%",display:"block",objectFit:"cover"}}
+            />
           </div>
         </div>
 

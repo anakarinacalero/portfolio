@@ -5,7 +5,7 @@ function Nav({ active = null, docked = false, onDock }) {
     { id: "about",        label: "About" },
     { id: "technologies", label: "Technologies" },
     { id: "interests",    label: "Interests" },
-    { id: "work",         label: "Projects" },
+    { id: "work",         label: "Experience" },
     { id: "next-steps",   label: "Next Steps" },
     { id: "contact",      label: "Contact" },
   ];

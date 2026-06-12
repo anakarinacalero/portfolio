@@ -1,5 +1,4 @@
 // ProjectModal.jsx — project detail with image carousel + repo link.
-// Images are drag-and-drop <image-slot>s so the user supplies real screenshots.
 
 function ProjectModal({ project, onClose }) {
   const { id, title, desc, year, kind, tags = [], repo, shots = 3, images = [] } = project;
@@ -25,14 +24,11 @@ function ProjectModal({ project, onClose }) {
           <div className="carousel-track" style={{ transform: `translateX(-${active * 100}%)` }}>
             {Array.from({ length: n }).map((_, i) => (
               <div className="carousel-slide" key={i}>
-                <image-slot
-                  id={`proj-${id}-${i}`}
-                  style={{ width: "100%", height: "100%", display: "block" }}
-                  shape="rect"
-                  fit="cover"
+                <img
                   src={images[i]}
-                  placeholder={`Drop ${title} screenshot ${i + 1}`}
-                ></image-slot>
+                  alt={`${title} screenshot ${i + 1}`}
+                  style={{ width: "100%", height: "100%", display: "block", objectFit: "cover" }}
+                />
               </div>
             ))}
           </div>

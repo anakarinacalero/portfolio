@@ -1,11 +1,13 @@
 // WorkGrid.jsx — Projects carousel: big preview image per project,
 // short description below, click to open the full modal.
 
+const EXPERIENCE_SUMMARY = "Since 2023, I have been designing and delivering full-stack web applications using ASP.NET Core, C#, Blazor WebAssembly, and JavaScript, supporting multiple business workflows in a remote environment. I contributed to the development of a custom ERP platform from data modeling and API design to frontend implementation, creating solutions actively used by operations teams. My work included integrating more than 20 third-party REST APIs, such as Twilio and Gmail, to automate communication processes and connect external services with core business systems. I also developed a reusable Blazor component library that improved UI consistency and reduced code duplication across modules. To increase development efficiency, I incorporated AI-assisted tools such as GitHub Copilot and Claude Code into my workflow for scaffolding and repetitive development tasks. Throughout the software lifecycle, I collaborated closely with designers, product managers, and QA teams to deliver scalable, maintainable, and user-focused solutions.";
+
 const PROJECTS = [
   {
     id: "bolsa",
     year: "2025", kind: "Platform", featured: true,
-    title: "Bolsa de Valores",
+    title: "Stock Exchange Platform",
     blurb: "Authentication and KYC flows for a stock-trading platform — login, recovery, and identity verification.",
     desc: "Authentication and KYC flows for a stock-trading platform. Login, password recovery, error handling, and identity verification, designed to feel reassuring on something as sensitive as a brokerage account.",
     tags: ["React", "KYC", "UI/UX"],
@@ -88,8 +90,18 @@ function WorkGrid() {
   return (
     <section className="work" id="work">
       <div className="section-head">
-        <span className="eyebrow">Projects · 2023 — 2025</span>
-        <h2>Personal projects</h2>
+        <span className="eyebrow">Experience · 2023 — 2026</span>
+        <h2>Full Stack Developer · Decrypt and Code</h2>
+        <p className="proj-caption-desc" style={{ color: "var(--accent-lavender)" }}>2023 – Present · México (Remote)</p>
+      </div>
+
+      <p className="proj-caption-desc" style={{ maxWidth: "75ch", marginBottom: 64 }}>
+        {EXPERIENCE_SUMMARY}
+      </p>
+
+      <div className="section-head">
+        <h2>Personal Projects</h2>
+        <p className="proj-caption-desc">Inspired by modules I built for ERP platform projects</p>
       </div>
 
       <div className="proj-carousel">
@@ -104,14 +116,11 @@ function WorkGrid() {
                 aria-label={`Open ${p.title}`}
                 tabIndex={i === active ? 0 : -1}
               >
-                <image-slot
-                  id={`proj-${p.id}-preview`}
-                  style={{ width: "100%", height: "100%", display: "block" }}
-                  shape="rect"
-                  fit="cover"
+                <img
                   src={p.images && p.images[0]}
-                  placeholder={`Drop ${p.title} preview image`}
-                ></image-slot>
+                  alt={`${p.title} preview`}
+                  style={{ width: "100%", height: "100%", display: "block", objectFit: "cover" }}
+                />
                 <span className="proj-slide-shade" aria-hidden="true"></span>
                 <span className="proj-open-hint">
                   View project
