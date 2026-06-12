@@ -209,6 +209,8 @@ html, body {
   letter-spacing: var(--tr-normal);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .h-display {

@@ -567,6 +567,7 @@ body.locked {
   border: 1px solid rgba(244,241,248,0.08);
   border-radius: 18px;
   padding: 22px;
+  min-width: 0;
 }
 .stack-group-name {
   font-family: var(--font-mono);
@@ -862,7 +863,7 @@ body.locked {
   box-shadow: var(--sh-glow);
   flex-shrink: 0;
 }
-.about-text-col { display: flex; flex-direction: column; gap: 12px; }
+.about-text-col { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
 .about-heading {
   font-size: clamp(2rem, 3vw, 2.75rem);
   font-weight: 500; letter-spacing: -0.03em; line-height: 1.05;
@@ -945,7 +946,7 @@ body.locked {
 .nextsteps-layout {
   display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: flex-start;
 }
-.nextsteps-col { display: flex; flex-direction: column; gap: 0; }
+.nextsteps-col { display: flex; flex-direction: column; gap: 0; min-width: 0; }
 .ns-block { margin-bottom: 28px; }
 .ns-block-label {
   font-family: var(--font-mono);
