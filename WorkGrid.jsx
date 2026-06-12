@@ -91,7 +91,7 @@ function WorkGrid() {
     <section className="work" id="work">
       <div className="section-head">
         <span className="eyebrow">Experience · 2023 — 2026</span>
-        <h2>Full Stack Developer · Decrypt and Code</h2>
+        <h2>Full Stack Software Developer · Decrypt and Code</h2>
         <p className="proj-caption-desc" style={{ color: "var(--accent-lavender)" }}>2023 – Present · México (Remote)</p>
       </div>
 
